@@ -393,17 +393,7 @@ label {
   display: none; }
 
 .body {
-  position: relative;
-  	/*&__balls {
-  		position: absolute;
-  		max-width: 90%;
-  		height: auto;
-  		top: 0;
-  	}
-  
-  	&._ny {
-  
-  	}*/ }
+  position: relative; }
   .body__content {
     width: 100%;
     z-index: 2;
@@ -427,6 +417,28 @@ label {
     .body__logo svg {
       max-width: 100%;
       height: auto; }
+  .body__balls {
+    position: absolute;
+    max-width: 90%;
+    height: auto;
+    top: -6%;
+    display: none; }
+    @media (max-width: 575px) {
+      .body__balls {
+        top: -3%;
+        max-width: 100%; } }
+  .body__tree {
+    position: absolute;
+    bottom: 0;
+    left: 3%;
+    max-width: 97%;
+    height: auto;
+    display: none; }
+    @media (max-width: 767px) {
+      .body__tree {
+        opacity: .5; } }
+  .body._ny .body__balls, .body._ny .body__tree {
+    display: block; }
 
 .form {
   display: flex;
