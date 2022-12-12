@@ -1,0 +1,132 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	padding-top: 65px;
+	justify-content: center;
+	width: 100%;
+
+	@media (max-width: 575px) {
+		flex-grow: 1;
+	}
+
+	&__fieldset {
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__input {
+		height: 60px;
+		background: rgba(255, 255, 255, 0.1);
+		border: 2px solid $color_white;
+		border-radius: 15px;
+		color: $color_white;
+		padding: 0 20px;
+
+		&::-webkit-input-placeholder {
+			color: $color_white;
+		}
+
+		&::-moz-placeholder {
+			color: $color_white;
+		}
+	}
+
+	&__info {
+		font-size: .7rem;
+		font-family: 'Roboto';
+		font-weight: 900;
+		color: $color_white;
+
+		@media (max-width: 991px) {
+			font-size: .9rem;
+		}
+
+		&._right {
+			text-align: right;
+		}
+
+		&._center {
+			text-align: center;
+		}
+
+		& a {
+			text-decoration: underline;
+			color: $color_white;
+
+			&:hover {
+				text-decoration: none;
+				color: $color_white;
+			}
+		}
+	}
+
+	&__forgot {
+		margin-top: 20px;
+	}
+
+	&__recaptcha {
+		text-align: center;
+
+		& img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+
+		& button {
+			height: 53px;
+			padding: 0 85px;
+			background: $color_green;
+			color: $color_white;
+			text-transform: uppercase;
+			border-radius: 12px;
+			font-weight: 700;
+			width: auto;
+			font-size: .9rem;
+
+			&:hover {
+				background: $color_white;
+				color: #444;
+			}
+		}
+
+		&._small {
+			& button {
+				padding: 0 30px;
+			}
+		}
+	}
+
+	&__message {
+		padding: 13px 30px;
+		color: $color_white;
+		border-radius: 9px;
+		line-height: 130%;
+		border: 2px solid rgba(255,255,255,.4);
+		font-size: .82rem;
+		font-family: 'Roboto';
+		font-weight: 500;
+		display: none;
+
+		&._active {
+			display: flex;
+		}
+
+		&._error {
+			background: $color_error;
+		}
+
+		&._success {
+			background: $color_success;
+		}
+
+		& span {
+			font-weight: 900;
+		}
+	}
+}

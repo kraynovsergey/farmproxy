@@ -1,0 +1,22 @@
+$color_white: #FFFFFF;
+$color_green: #55BF09;
+$color_success: rgba(0, 255, 57, 0.4);
+$color_error: rgba(251, 10, 10, 0.4);
+$color_blue: #1D273C;
+
+$transition: 0.5s ease;
+
+@import "includes/reboot";
+@import "includes/grid";
+@import "includes/fonts";
+@import "includes/default";
+@import "includes/svg";
+
+@import "includes/body";
+@import "includes/form";
+
+
+
+
+
+
